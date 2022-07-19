@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    environment {
+/*    environment {
 
         AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
@@ -16,7 +16,7 @@ pipeline {
         SONAR_TOKEN = "sqp_aa3cba40e3342d9cff9044e498766a66cf8cc0cc"
 
     }
-
+*/
     stages {
         stage('Validate') {
             steps {
@@ -49,7 +49,7 @@ pipeline {
                 }
             }
         }
-
+/*
         stage('Quality Scan'){
             steps {
                 sh '''
@@ -62,7 +62,7 @@ pipeline {
                 '''
             }
         }
-
+*/
         stage('Package') {
             steps {
                 
@@ -78,7 +78,7 @@ pipeline {
                 }
             }
         }
-
+/*
         stage('Publish artefacts to S3 Bucket') {
             steps {
 
@@ -99,6 +99,6 @@ pipeline {
                 
             }
         }
-        
+      */  
     }
 }
