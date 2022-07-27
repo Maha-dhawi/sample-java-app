@@ -8,7 +8,7 @@ pipeline {
 
         AWS_S3_BUCKET = "artifact-bucket-repom"
         ARTIFACT_NAME = "hello-world.war"
-        AWS_EB_APP_NAME = "java-webapp"
+        AWS_EB_APP_NAME = "java-app-env"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
         AWS_EB_ENVIRONMENT = "Javawebapp-env"
 
