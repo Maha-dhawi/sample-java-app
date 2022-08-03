@@ -1,5 +1,5 @@
 FROM tomcat:latest AS base
-EXPOSE 3000
+EXPOSE 8080
 
 FROM maven:3.8.6-jdk-11 AS build
 WORKDIR /var/www
