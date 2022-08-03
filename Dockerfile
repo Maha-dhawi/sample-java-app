@@ -8,5 +8,5 @@ RUN mvn package
 
 FROM base AS final
 WORKDIR /usr/local/tomcat/webapps/
-COPY --from-build /var/www/target/helloworld.war helloworld.war
+COPY --from=build /var/www/target/helloworld.war helloworld.war
 CMD ["catalina.sh", "run"]
