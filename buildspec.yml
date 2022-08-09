@@ -9,7 +9,7 @@ phases:
     on-failure: ABORT
     commands:
     - echo Build start on 'date'
-    - mvn clean
+    - mvn clean1
     - mvn validate
     - echo Build ends on 'date'
   build:
